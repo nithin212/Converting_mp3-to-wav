@@ -2,7 +2,10 @@
 #!pipwin install pyaudio
 # !pip install ffmpeg-python
 # !pip install pydub
+#!pip install SpeechRecognition
 
+import speech_recognition as sr
+import sys
 import pydub
 pydub.AudioSegment.ffmpeg = "/absolute/path/to/ffmpeg"
 sound = AudioSegment.from_mp3("Filename.mp3")
